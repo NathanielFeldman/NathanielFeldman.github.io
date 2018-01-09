@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* { box-sizing: border-box; }
+
+
+.pdfobject-com {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2016;
+}
+
+.pdfobject-com a:link, .pdfobject-com a:visited {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding: .25rem 1rem;
+    background: #6699FF;
+    text-decoration: none;
+}
+
+.pdfobject-com a:hover, .pdfobject-com a:visited:hover {
+    color: #FFF;
+    background: #FF3366;
+    text-decoration: none;
+}
+
+.pdfobject-com a:before {
+     content: "\2190";
+     margin-right: .25rem;
+}

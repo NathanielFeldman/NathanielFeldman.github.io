@@ -1,23 +1,20 @@
-/* Show it is fixed to the top */
-
 html,
 
 body 
 {
-    height: 100%;
-    padding-top: 4.5rem;
-    background: url("../boston.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  height: 100%;
+  background: url("../boston.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #container
 {
-    min-height:100%;
-    position: relative;
-    padding-bottom: 4.5rem;
+  min-height:100%;
+  position: relative;
+
 }​
 
 #body {
@@ -25,12 +22,14 @@ body
 }
 
 #jumbo {
-   background: rgba(255, 255, 255, 0.75); 
+  background: rgba(255, 255, 255, 0.75); 
 }
 
 #footer {
-   position: absolute;
-   bottom: 0;
-   text-align: center;
-   width:100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  width:100%;
 }
+

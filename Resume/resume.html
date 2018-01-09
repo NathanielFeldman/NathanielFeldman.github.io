@@ -10,10 +10,26 @@
     <title>Nathaniel Feldman - Portfolio</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css\bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css\main.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/pdfobject.css" rel="stylesheet">
+
+    <style>
+    .pdfobject-container {
+      max-width: 70%;  
+      height: 100%; 
+      border: 5px solid rgba(0,0,0,.2);
+      margin-left: auto ;
+      margin-right: auto ;
+    }
+
+    html, body {
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
+    }
+    </style>
 
   </head>
 
@@ -33,16 +49,16 @@
               <a class="nav-link" href="resume.html">Resume</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="../Professional Experience\experience.html">Professional Experience</a>
+              <a class="nav-link" href="../Professional Experience/experience.html">Professional Experience</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="../Education\education.html">Education</a>
+              <a class="nav-link" href="../Education/education.html">Education</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="../Projects\projects.html">Projects</a>
+              <a class="nav-link" href="../Projects/projects.html">Projects</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="../Accolades\accolades.html">Accolades</a>
+              <a class="nav-link" href="../Accolades/accolades.html">Accolades</a>
           </li>
         </ul>
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
@@ -56,15 +72,16 @@
       </div>
     </nav>
 
+    <div id="my-pdf"></div>
+    <div id="footer">
+      <p>&copy; Copyright 2017 <a href="../About Me/aboutme.html">Nathaniel Feldman</a> </p>
+    </div> 
 
-    <div id="container">
-
-      <div id="footer">
-        <p>&copy; Copyright 2017 <a href="../About Me/aboutme.html">Nathaniel Feldman</a> </p>
-      </div> 
-    </div>  
-  </body>
-
+    <script src="pdfobject/pdfobject.min.js"></script>
+    <script>
+      var container = document.querySelector("#my-pdf");
+      PDFObject.embed("resume - Nathaniel Feldman.pdf", container);
+    </script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
