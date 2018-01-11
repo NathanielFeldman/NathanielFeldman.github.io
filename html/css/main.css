@@ -1,0 +1,36 @@
+html,
+
+body 
+{
+  height: 100%;
+  background: url("../boston.jpg") no-repeat center center fixed;
+  z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#container
+{
+  min-height:100%;
+  position: relative;
+
+}​
+
+#body {
+    
+}
+
+#jumbo {
+  background: rgba(255, 255, 255, 0.75); 
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  width:100%;
+}
+
